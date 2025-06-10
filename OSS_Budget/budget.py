@@ -32,7 +32,7 @@ class Budget:
         today = datetime.date.today().isoformat()
         expense = Imports(today, category, description, amount)
         self.imports.append(imports)
-        print("지출이 추가되었습니다.\n")
+        print("수입이 추가되었습니다.\n")
 
     def list_expenses(self):
         if not self.imports:
