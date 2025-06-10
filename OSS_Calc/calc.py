@@ -45,8 +45,14 @@ class Calculator:
         else:
             self.expression += str(char)
 
+        for clicker in buttons:     # 예시) 서로 다른 두 수의 나눗셈-0으로 나누는 경우 "나눌 수 없습니다." 경고창 띄우기
+            num_1 = int(input())
+            num_2 = int(input())
+            if num_1 / num_2 and num_2=0:
+                print("경고! 0으로 나눌 수 없습니다")
+
         self.entry.delete(0, tk.END)
         self.entry.insert(tk.END, self.expression)
 
 
-
+    
